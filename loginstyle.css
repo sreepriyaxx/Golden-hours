@@ -73,14 +73,21 @@ button:hover{
 }
 @media(max-width:480px){
    .login-container {
-  width: 90%;
+  width: 80%;
   padding: 30px 20px;
 
+    }
+    form input{
+        width: 80%;
     }
     .login-container h1{
         font-size: 20px;
     }
+    button{
+        width: 80%;
+    }
     form input button{
+       
         font-size: 14px;
         padding: 10px;
 
