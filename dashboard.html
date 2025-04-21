@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+  <div class="images">
+    <img src="./assets/download (1).jpg">
+  <img src="./assets/download (3).jpg">
+<img src="./assets/download.jpg"> 
+  </div>
+<div class="dashboard">
+    <h2> Welcome back, Sunshine!</h2>
+    <p id="date-time"></p>
+    <div class="todo-section">
+        <h3>Today's Tasks</h3>
+        <ul id="todo-list"></ul>
+        <input type="text" id="task-input" placeholder="Add a new task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+    <div class="progress-ring-container">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-ring-bg" cx="60" cy="60" r="50" />
+          <circle class="progress-ring-circle" cx="60" cy="60" r="50" />
+        </svg>
+        <div class="progress-text" id="progress-text">0%</div>
+      </div>
+      
+<div id="reflection" class="hidden">
+<h4> how was your day?</h4>
+<button class="emoji">☺️ </button>
+<button class="emoji"> 🙃 </button>
+<button class="emoji"> 😑</button>
+
+</div>
+</div>
+
+
+<div class="wrapper">
+  <div class="extra" >
+    <div>
+      <h4>Extra Notes</h4>
+      <textarea id="extraNoteInput" placeholder="write something sweet or important"></textarea>
+      <button id="saveNoteBtn">Save Notes</button>
+      <ul id="extraNotesList"></ul>
+    </div>
+  </div>
+
+  <div class="memories-box">
+    <h4>Memories!!</h4>
+    <input type="file" id="memory-upload" accept="image/*" multiple />
+    <div id="memory-preview" class="memory-preview"></div>
+    <button id="download-collage" style="display: none;">Download Collage</button>
+  </div>
+  
+  
+  
+  
+
+  <div class="wins-box">
+    <h3>Little Wins!</h3>
+    <input type="text" id="win-input" placeholder="Share a small win..." />
+    <button onclick="addWin()">Add</button>
+    <ul id="win-list"></ul>
+  </div>
+</div>
+
+<script src="dashboard.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</body>
+</html>
