@@ -62,7 +62,7 @@ body {
   /* Mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
     .signup-container {
-        width: 90%;
+        width: 80%;
         padding: 30px 20px;
     }
   
@@ -72,10 +72,12 @@ body {
   
     .signup-container input,
     .signup-container button {
+      width: 80%;
       font-size: 14px;
       padding: 10px;
     }
   }
+  
   
   
   
